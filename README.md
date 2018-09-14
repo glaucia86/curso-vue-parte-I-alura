@@ -6,8 +6,9 @@ Repositório responsável pelos códigos desenvolvidos durante o curso de [Vue.j
 ## Recursos Utilizados durante o curso:
 
 - Visual Studio Code
-- Node.Js
-- Vue.Js
+- Node.Js;
+- Vue.Js;
+- ES 5/6;
 
 **documentação em desenvolvimento**
 
