@@ -1,8 +1,11 @@
 <template>
   <div>
-    <h1>{{ titulo }}</h1>
-    <img :src="foto_1.url" :alt="foto_1.titulo"/>
-    <img :src="foto_2.url" :alt="foto_2.titulo"/>
+    <h1>{{ titulo }}</h1>    
+    <ul>
+      <li v-for="foto in fotos">
+        <img :src="foto.url" :alt="foto.titulo"/>
+      </li>
+    </ul>
   </div>
 </template>
 
@@ -11,14 +14,16 @@ export default {
   data() {
     return {
       titulo: "Alurapic",
-      foto_1: {
-        url: 'https://bit.ly/2MtUsdf',
-        titulo: 'cachorro'
-      },
-      foto_2: {
-        url: 'https://bit.ly/2xcTgq2',
-        titulo: 'cachorro'
-      }
+      fotos: [
+        {
+          url: "https://bit.ly/2MtUsdf",
+          titulo: "cachorro"
+        },
+        {
+          url: "https://bit.ly/2xcTgq2",
+          titulo: "cachorro"
+        }
+      ]
     };
   }
 };
