@@ -5,7 +5,7 @@
  * Author: Glaucia Lemos
  */
 
-const Datastore = require('nedb')
+var Datastore = require('nedb')
     ,dbName = 'data.db'
     ,db;
 
