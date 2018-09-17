@@ -1,22 +1,18 @@
 <template>
     <div class="painel">
-        <h2 class="painel-titulo">{{foto.titulo}}</h2>
-            <div class="painel-corpo">
-                
+        <h2 class="painel-titulo">{{ titulo }}</h2>
+            <div class="painel-conteudo">
             </div>
         </div> 
 </template>
 
 <script>
-
 export default {
-
+  props: ["titulo"]
 };
-
 </script>
 
 <style>
-
 .painel {
   padding: 0 auto;
   border: solid 2px grey;
@@ -37,6 +33,5 @@ export default {
   padding: 10px;
   text-transform: uppercase;
 }
-
 </style>
 
