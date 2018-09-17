@@ -14,18 +14,15 @@ export default {
   data() {
     return {
       titulo: "Alurapic",
-      fotos: [
-        {
-          url: "https://bit.ly/2MtUsdf",
-          titulo: "cachorro"
-        },
-        {
-          url: "https://bit.ly/2xcTgq2",
-          titulo: "cachorro"
-        }
-      ]
+      fotos: []
     };
-  }
+  },
+
+  created() {
+    this.$http.get('http://localhost:3000/v1/fotos')
+      .then(res => res.json())
+      .then(fotos => this.fotos = fotos);
+  },
 };
 </script>
 
