@@ -1,23 +1,19 @@
 <template>
   <div class="corpo">
-
     <meu-menu :rotas="routes"></meu-menu>
-
   <transition name="pagina">
     <router-view></router-view> 
   </transition>
-
   </div>
 </template>
 
 <script>
 import { routes } from "./routes";
-import Menu from './components/shared/menu/Menu.vue';
+import Menu from "./components/shared/menu/Menu.vue";
 
 export default {
-
   components: {
-    'meu-menu': Menu
+    "meu-menu": Menu
   },
 
   data() {
@@ -28,19 +24,20 @@ export default {
 }
 </script>
 
-
 <style>
-  .corpo {
+.corpo {
     font-family: Helvetica, sans-serif;
-    margin: 0 auto;
     width: 96%;
+    margin: 0 auto;
   }
 
-.pagina-enter-active, .pagina-leave-active {
-    transition: opacity .3s
-  }
-  
-.pagina-enter, .pagina-leave-active {
-    opacity: 0
-  }
+ .pagina-enter, .pagina-leave-active {
+
+     opacity: 0;
+ }
+
+ .pagina-enter-active, .pagina-leave-active {
+
+     transition: opacity .4s;
+ }
 </style>

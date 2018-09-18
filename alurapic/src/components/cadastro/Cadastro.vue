@@ -1,13 +1,10 @@
 <template>
     <div>
-        <h1 class="centralizado">Cadastro</h1>
+        <h2 class="centralizado">Cadastro</h2>
     </div>    
 </template>
 
 <script>
-export default {
-    
-}
 </script>
 
 

@@ -1,5 +1,5 @@
 <template>
-  <div class="corpo">
+  <div>
     <h1 class="centralizado">{{ titulo }}</h1>
     <input type="search" class="filtro" @input="filtro = $event.target.value" placeholder="Filtre pelo Título da Foto">
     <ul class="lista-fotos">
@@ -25,16 +25,17 @@ export default {
   },
   data() {
     return {
+      titulo: 'Alurapic',
       fotos: [],
       filtro: ""
-    };
+    }
   },
 
   computed: {
     fotosComFiltro() {
       if (this.filtro) {
-        let expressao = new RegExp(this.filtro.trim(), "i");
-        return this.fotos.filter(foto => expressao.test(foto.titulo));
+        let exp = new RegExp(this.filtro.trim(), 'i');
+        return this.fotos.filter(foto => exp.test(foto.titulo));
       } else {
         return this.fotos;
       }
@@ -47,7 +48,7 @@ export default {
       .then(res => res.json())
       .then(fotos => (this.fotos = fotos), err => console.log(err));
   }
-};
+}
 </script>
 
 <style>
