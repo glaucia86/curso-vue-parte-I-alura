@@ -52,24 +52,24 @@ export default {
 
 <style>
 
-    .centralizado {
-        text-align: center;
-    }
-
-    .lista-fotos {
-    list-style: none;
-    }
-
-    .lista-fotos .lista-fotos-item {
-    display: inline-block;
-    }
-
-    .titulo {
+  .centralizado {
     text-align: center;
-    }
+  }
 
-    .filtro {
+  .lista-fotos {
+    list-style: none;
+  }
+
+  .lista-fotos .lista-fotos-item {
+    display: inline-block;
+  }
+
+  .titulo {
+    text-align: center;
+  }
+
+  .filtro {
     display: block;
     width: 100%;
-    }
+  }
 </style>
