@@ -1,12 +1,13 @@
 <template>
   <div>
-    <h1 class="centralizado">{{ titulo }}</h1>
+    <h1 class="centralizado">Alurapic</h1>
     <input type="search" class="filtro" @input="filtro = $event.target.value" placeholder="Filtre pelo Título da Foto">
     <ul class="lista-fotos">
       <li class="lista-fotos-item" v-for="foto of fotosComFiltro">
 
         <meu-painel :titulo="foto.titulo">
           <imagem-responsiva :url="foto.url" :titulo="foto.titulo" />
+          <meu-botao rotulo="remover" tipo="button"/>
         </meu-painel>
         
       </li>
@@ -17,11 +18,13 @@
 <script>
 import Painel from "../shared/painel/Painel.vue";
 import ImagemResponsiva from "../shared/imagem-responsiva/ImagemResponsiva.vue";
+import Botao from '../shared/botao/Botao.vue';
 
 export default {
   components: {
-    "meu-painel": Painel,
-    "imagem-responsiva": ImagemResponsiva
+    'meu-painel': Painel,
+    'imagem-responsiva': ImagemResponsiva,
+    'meu-botao': Botao
   },
   data() {
     return {
