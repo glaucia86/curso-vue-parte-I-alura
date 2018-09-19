@@ -1,5 +1,5 @@
 <template>
-    <button class="botao botao-perigo" :type="tipo" @click="disparaAcao()">{{ rotulo }}</button>      
+    <button :class="estiloBotao" :type="tipo" @click="disparaAcao()">{{ rotulo }}</button>      
 </template>
 
 <script>
@@ -13,16 +13,9 @@ export default {
       required: true,
       type: String
     },
-    confirmacao: {
-      required: false,
-      default: false,
-      type: Boolean
-    },
-    estilo: {
-      required: false,
-      default: "padrao",
-      type: String
-    }
+    
+    confirmacao: Boolean,
+    estilo: String
   },
 
   methods: {
