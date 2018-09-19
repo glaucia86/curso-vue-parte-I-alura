@@ -10,5 +10,3 @@ Repositório responsável pelos códigos desenvolvidos durante o curso de [Vue.j
 - Vue.Js;
 - ES 5/6;
 
-**documentação em desenvolvimento**
-
