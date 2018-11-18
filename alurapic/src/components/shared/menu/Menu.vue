@@ -10,17 +10,7 @@
     </nav>
 </template>
 
-<script>
-export default {
-    props: {
-        rotas: {
-            type: Array,
-            required: true
-        }
-    }
-}
-</script>
+<script src="./Menu.js" />
+<style src="./Menu.css" />
 
-<style>
-</style>
 
