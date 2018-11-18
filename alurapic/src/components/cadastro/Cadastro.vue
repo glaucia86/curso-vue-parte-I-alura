@@ -1,15 +1,9 @@
 <template>
     <div>
         <h2 class="centralizado">Cadastro</h2>
-    </div>    
+    </div>
 </template>
 
-<script>
-</script>
+<script src="./Cadastro.js" />
+<style src="./Cadastro.css" scoped />
 
-
-<style scoped>
-    .centralizado {
-        text-align: center;
-    }
-</style>
